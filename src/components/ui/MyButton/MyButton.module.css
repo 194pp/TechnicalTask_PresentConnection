@@ -1,0 +1,17 @@
+.Button {
+  padding: 6px;
+  margin: 6px;
+  background: white;
+  color: dodgerblue;
+  font-size: 20px;
+  border: 3px solid dodgerblue;
+  border-radius: 6px;
+  transition: 400ms ease;
+}
+.Button:hover {
+  transform: scale(1.05);
+}
+.Solid {
+  background: dodgerblue;
+  color: white;
+}

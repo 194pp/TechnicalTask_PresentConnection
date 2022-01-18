@@ -1,0 +1,70 @@
+.Table {
+  margin: 1rem;
+  background-color: dodgerblue;
+  text-align: left;
+}
+
+.TableRow {
+  background-color: dodgerblue;
+}
+.TableRow>th {
+  background-color: white;
+  padding: 2px;
+}
+.TableRow:first-child>th {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.RowUserId {
+  width: 25px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.RowId {
+  font-size: 20px;
+  min-width: 30px;
+  min-height: 20px;
+  text-align: center;
+  background: linear-gradient(90deg,dodgerblue,rebeccapurple);
+  transition: 400ms ease;
+  position: relative;
+  z-index: 3;
+}
+.RowId:hover {
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(45deg,dodgerblue,rebeccapurple);
+}
+.RowId:hover:before {
+  transform: scale(0);
+}
+.RowId:before {
+  content: '';
+  transition: 200ms ease;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 144, 255, 0.25);
+  left: 0;
+  top: 0;
+}
+.RowIdWrapper {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.RowTitle {
+  max-width: 30%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.RowBody {
+  max-width: 800px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
