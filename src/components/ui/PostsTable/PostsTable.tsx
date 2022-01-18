@@ -24,9 +24,6 @@ const TableRow = (props: {data: row}) => {
 }
 
 const PostsTable = (props: {data: row[]}) => {
-  if (!Array.isArray(props.data)) console.log("Single == TRUE");
-  if (!!props.data && Array.isArray(props.data)) console.log("Many == TRUE");
-
   return (
     <table className={classes.Table}>
       <tbody>

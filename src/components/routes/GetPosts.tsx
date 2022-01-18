@@ -9,7 +9,6 @@ const GetPosts = () => {
   const params = useParams();
 
   useEffect(() => {
-    console.log(`Fetching: ${API_URL}/${params.userId ? params.userId : ''}`);
     fetch(`${API_URL}`)
       .then(res => res.json())
       .then((data) => {
@@ -20,12 +19,10 @@ const GetPosts = () => {
   }, []);
 
   useEffect(() => {
-    console.log(`Fetching: ${API_URL}/${params.userId ? params.userId : ''}`);
     fetch(`${API_URL}/${params.userId ? params.userId : ''}`)
       .then(res => res.json())
       .then(data => setPosts(data));
 
-    console.log(params);
   }, [params.userId]);
 
   if (posts) {
